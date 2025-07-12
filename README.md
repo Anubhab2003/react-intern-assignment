@@ -1,12 +1,43 @@
-# React + Vite
+# Spreadsheet UI Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a React application featuring a spreadsheet-like user interface component, developed as part of an intern assignment. The component is designed to simulate a Google Sheets or Excel experience based on provided design specifications.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The `Table.jsx` component implements a responsive, grid-based spreadsheet view, complete with interactive headers, dynamically stretching columns, and editable cells.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Pixel-Close Design:** The layout, including specific shades, icons, and spacing, closely matches the design mockups.
+* **Google Sheet/Excel Experience:** Empty cells are `contentEditable`, allowing direct user input, providing a seamless spreadsheet feel.
+* **Interactive UI:** All buttons in the top header and tabs in the footer are functional. Buttons log interaction events to the console, and footer tabs manage state changes when clicked.
+* **Responsive Layout:** Columns stretch dynamically to cover available horizontal space while maintaining alignment.
+
+## Technologies Used
+
+* **React**
+* **Tailwind CSS**
+* **Lucide React** (for icons)
+
+## Setup Instructions
+
+To run this project locally, clone the repository and install the dependencies.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Anubhab2003/react-intern-assignment.git](https://github.com/Anubhab2003/react-intern-assignment.git)
+    cd react-intern-assignment
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the application:**
+    ```bash
+    npm run dev
+    # or npm start, depending on the project configuration
+    ```
+
+The application should now be running on your local development server.
